@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Converter velocidade media</title>
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+
+        <link rel="shortcut icon" type="imagex/png" href="./assets/img/icon.ico">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="container">
+
+                <h1><img src="./assets/img/Logo.png" alt="Logo da firma"></h1>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="main-div">
+
+                <a class="go-to-main-page" href="./index.html">
+
+                    <ion-icon name="caret-back-outline"></ion-icon>
+                    <p><ins>Voltar para o início</ins> </p>
+
+                </a>
+
+                <div class="form-page">
+
+                    <div class="form-page-title">
+
+                        <img src="./assets/img/converter-velocidade-media.png" alt="Icone da formulario">
+                        <h2>Converter velocidade media</h2>
+
+                    </div>
+
+                    <form id="form" action="submit">
+
+                        <div id="error" class="invisible">
+
+                            <p id="error-message"></p>
+
+                        </div>
+
+                        <div class="field-group">
+
+                            <div class="line-of-fields">
+
+                                <label for="value-to-be-converted">Velocidade media</label>
+                                <div class="double-line-of-fields">
+
+                                    <input id="value-to-be-converted" type="number" name="value-to-be-converted" step="any" placeholder="Insira o valor a ser convertido" required>
+                                    <select id="unit-of-measure-to-be-converted" name="unit-of-measure-to-be-converted">
+
+                                        <option value="escolha"></option>
+                                        <option value="km/s">km/s</option>
+                                        <option value="km/h">km/h</option>
+                                        <option value="km/min">km/min</option>
+
+                                        <option value="m/s">m/s</option>
+                                        <option value="m/h">m/h</option>
+                                        <option value="m/min">m/min</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="field-group">
+
+                            <div class="line-of-fields">
+
+                                <label for="convert-to">para</label>
+                                <select id="convert-to"name="convert-to">
+
+                                    <option value="escolha"></option>
+                                    <option value="km/s">km/s</option>
+                                    <option value="km/h">km/h</option>
+                                    <option value="km/min">km/min</option>
+
+                                    <option value="m/s">m/s</option>
+                                    <option value="m/h">m/h</option>
+                                    <option value="m/min">m/min</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-page-button">
+
+                            <button type="submit" id="form-button">Converter</button>
+
+                        </div>
+
+                        <div class="invisible">
+
+                            <p>A velocidade media é: <p id="result"></p></p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        <script src="./assets/Javascript/convert-average-speed.js"></script>
+
+    </body>
+
+</html>

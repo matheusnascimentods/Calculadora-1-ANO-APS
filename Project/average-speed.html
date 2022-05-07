@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcular velocidade media</title>
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+
+        <link rel="shortcut icon" type="imagex/png" href="./assets/img/icon.ico">
+    </head>
+
+    <body>
+        <header>
+
+            <div class="container">
+
+                <h1><img src="./assets/img/Logo.png" alt="Logo da firma"></h1>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="main-div">
+
+                <a class="go-to-main-page" href="./index.html">
+
+                    <ion-icon name="caret-back-outline"></ion-icon>
+                    <p><ins>Voltar para o início</ins></p>
+
+                </a>
+
+                <div class="form-page">
+
+                    <div class="form-page-title">
+
+                        <img src="./assets/img/radar-de-velocidade.png" alt="Icone da formulario">
+                        <h2>Calcular velocidade media</h2>
+
+                    </div>
+
+                    <form id="form" action="submit">
+
+                        <div id="error" class="invisible">
+
+                            <p id="error-message"></p>
+
+                        </div>
+
+                        <div class="field-group">
+
+                            <div class="line-of-fields">
+
+                                <label for="distance">Distância percorrida:</label>
+                                <input class="input-with-error" id="distance" type="number" name="distance" step="any" min="1" placeholder="Insira a distância percorrida" required>
+
+                            </div>
+
+                            <div class="line-of-fields">
+
+                                <label for="distance-measurement-unit">Unidade de comprimento:</label>
+                                <select id="distance-measurement-unit" name="distance-measurement-unit">
+
+                                    <option value="escolha"></option>
+                                    <option value="cm">cm</option>
+                                    <option value="m">m</option>
+                                    <option value="km">km</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="field-group">
+
+                            <div class="line-of-fields">
+
+                                <label for="time">Tempo:</label>
+                                <input id="time" type="number" name="time" min="1" placeholder="Insira o tempo levado para fazer o percurso" required>
+
+                            </div>
+
+                            <div class="line-of-fields">
+
+                                <label for="time-measurement-unit">Unidades de tempo:</label>
+                                <select id="time-measurement-unit" name="time-measurement-unit">
+
+                                    <option value="escolha"></option>
+
+                                    <option value="s">s</option>
+                                    <option value="min">min</option>
+                                    <option value="h">h</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-page-button">
+
+                            <button id="form-button" type="submit">Calcular</button>
+
+                        </div>
+
+                        <div class="invisible">
+
+                            <p>A velocidade media é: <p id="result"></p></p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        <script src="./assets/Javascript/average-speed.js"></script>
+    
+    </body>
+
+</html>

@@ -1,0 +1,192 @@
+/* Responsividade da pagina inicial */
+
+@media (max-width: 768px) {
+
+    .go-to-main-page p {
+
+        font-size: 2rem;
+
+    }
+
+}
+
+@media (max-width: 685px) {
+
+    html {
+        font-size: 50%;
+    }
+
+
+
+}
+
+@media (max-width: 635px) {
+
+
+    .question {
+
+        font-size: 2.5rem;
+        padding: 15px;
+    
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    .credits ul li ion-icon, .repository-link ul li ion-icon {
+
+        display: none;
+
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    .field-group {
+
+        flex-wrap: wrap;
+    
+    }
+
+    .double-line-of-fields {
+
+        flex-wrap: wrap;
+        
+    }
+
+    .double-line-of-fields input {
+
+        margin-right: 0%;
+        margin-bottom: 2%;
+
+    }
+
+    .double-line-of-fields select {
+
+        height: 40%;
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .form-page-title {
+
+        margin-bottom: 15%;
+
+    }
+
+    .credits-page-title img {
+
+        display: none;
+
+    }
+
+    .credits .collaborator {
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .line-of-fields label {
+
+        font-size: 1.7rem;
+
+    }
+
+    .line-of-fields input {
+
+        font-size: 2rem;
+
+    }
+
+    .line-of-fields select {
+
+        font-size: 2rem;
+
+    }
+
+}
+
+@media (max-width: 422px) {
+
+    .credits-special-text {
+
+        font-size: 2.5rem
+
+    }
+
+    .credits .collaborator {
+
+        font-size: 1.6rem;
+
+    }
+    
+}
+
+@media (max-width: 275px) {
+
+    .question {
+
+        font-size: 2.5rem;
+    
+    }
+
+}
+
+@media (max-width: 240px) {
+
+    .operation {
+
+        margin-bottom: 20%;
+
+    }
+
+}
+
+@media (max-width: 170px) {
+
+    html {
+        font-size: 25%;
+    }
+
+}
+
+@media (max-width: 100px) {
+
+    html {
+        font-size: 20%;
+    }
+
+    .operation {
+
+        border-radius: 10%;
+
+    }
+
+    .operation-icon {
+
+        padding: 20%;
+
+    }
+
+    .operation-title-div {
+
+        border-radius: 0% 0% 10% 10%;
+    
+    }
+
+}
+
+@media (max-width: 60px) {
+
+    html {
+        font-size: 15%;
+    }
+
+}
