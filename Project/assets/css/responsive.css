@@ -8,6 +8,8 @@
 
     }
 
+
+
 }
 
 @media (max-width: 685px) {
@@ -15,8 +17,6 @@
     html {
         font-size: 50%;
     }
-
-
 
 }
 
@@ -111,6 +111,12 @@
 
     }
 
+    .not-found-div h2 {
+
+        font-size: 20rem;
+    
+    }
+
 }
 
 @media (max-width: 422px) {
@@ -127,6 +133,36 @@
 
     }
     
+}
+
+@media (max-width: 410px) {
+
+    .not-found-div h2 {
+
+        font-size: 20rem;
+    
+    }
+
+}
+
+@media (max-width: 385px) {
+
+    .not-found-div h2 {
+
+        font-size: 18rem;
+    
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    .not-found-div h2 {
+
+        font-size: 15rem;
+    
+    }
+
 }
 
 @media (max-width: 275px) {

@@ -633,3 +633,94 @@ form {
     text-decoration: none;
 
 }
+
+/* Estilo da classe "404-page"  */
+
+.not-found-page {
+
+    width: 90%;
+    height: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: #262626;
+    margin-bottom: 25%;
+    margin-top: 5%;
+
+}
+
+.not-found-div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.not-found-div h2 {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23rem;
+
+    color: #FA586A;
+
+}
+
+.not-found-div div {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+.not-found-div div p {
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+
+    color: #FFFFFF;
+    margin-bottom: 30px;
+
+}
+
+.not-found-div div a {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.not-found-div div a button {
+
+    width: 70%;
+    height: 50px;
+    padding: 5px;
+    background: #FA586A;
+    border: 0 none;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+
+
+    color: #000000;
+
+    transition: 1s all;
+
+}
+
+.not-found-div div a button:hover {
+    
+    transition: 1s all;
+
+    background: #c24352;
+
+}
