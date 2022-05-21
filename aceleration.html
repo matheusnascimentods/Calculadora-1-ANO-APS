@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta media="viewport" content="width=devide-width">
+        <title>Calcular aceleração</title>
+
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <link rel="shortcut icon" type="imagex/png" href="./assets/img/icon.ico">
+
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div class="container">
+
+                <h1><img src="./assets/img/Logo.png" alt="Logo da firma"></h1>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="main-div">
+
+                <a class="go-to-main-page" href="./index.html">
+
+                    <ion-icon name="caret-back-outline"></ion-icon>
+                    <p><ins>Voltar para o início</ins> </p>
+
+                </a>
+
+                <div class="form-page">
+                    
+                    <div class="form-page-title">
+
+                        <img src="./assets/img/bar-chart.svg" alt="Icone da formulario">
+                        <h2>Calcular Aceleração</h2>
+
+                    </div>
+
+                    <form id="form" action="submit">
+
+                        <div id="error" class="invisible">
+
+                            <p id="error-message"></p>
+
+                        </div>
+
+                        <div class="field-group">
+
+                            <div class="line-of-fields">
+
+                                <label for="final-speed">Velocidade final:</label>
+                                <input id="final-speed" type="number" name="final-speed" step="any" placeholder="insira a velocidade final  em m/s" required>
+
+                            </div>
+
+                            <div class="line-of-fields">
+
+                                <label for="initial-speed">Velocidade inicial:</label>
+                                <input id="initial-speed" type="number" name="initial-speed" step="any" placeholder="insira a velocidade inicial em m/s" required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="field-group">
+
+                            <div class="line-of-fields">  
+
+                                <label for="time">Tempo:</label>
+                                <input id="time" type="number" name="time" step="any" placeholder="Insira o tempo" required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-page-button">
+
+                            <button type="submit" id="form-button">Calcular</button>
+
+                        </div>
+
+                        <div class="invisible">
+
+                            <p>O deslocamento foi de: <p id="result"></p></p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+</html>
