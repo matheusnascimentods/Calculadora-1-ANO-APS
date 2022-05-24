@@ -12,12 +12,12 @@ document.querySelector("#form").addEventListener('submit', function (event) {
         
         const operacoes = {
 
-            'cm para m': function (value) { return value / 100 },
-            'cm para km': function (value) { return value / 100000 },
-            'm para cm': function (value) { return  value * 100 },
-            'm para km': function (value) { return value / 1000 },
-            'km para m': function (value) { return value * 1000 },
-            'km para cm': function (value) { return value * 100000 }
+            'cm para m': function (value) { return (value / 100).toFixed(2) },
+            'cm para km': function (value) { return (value / 100000).toFixed(2) },
+            'm para cm': function (value) { return  (value * 100).toFixed(2) },
+            'm para km': function (value) { return (value / 1000).toFixed(2) },
+            'km para m': function (value) { return (value * 1000).toFixed(2) },
+            'km para cm': function (value) { return (value * 100000).toFixed(2) }
 
         }
 
@@ -25,7 +25,7 @@ document.querySelector("#form").addEventListener('submit', function (event) {
         let result = document.querySelector("#result")
             result.parentElement.classList.remove("invisible")
             result.parentElement.classList.add("visible")
-            result.innerText = (operacoes[`${converter_de} para ${converter_para}`](value)) + `${converter_para}`
+            result.innerText = (operacoes[`${converter_de} para ${converter_para}`](value)) + ` ${converter_para}`
 
     } catch (error) {
     

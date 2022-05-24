@@ -18,7 +18,7 @@ f.addEventListener("submit", (event)=>{
         const result = document.querySelector("#result")
             result.parentElement.classList.remove("invisible")
             result.parentElement.classList.add("visible")
-            result.innerText = `${vM} ${uS}/${uT}`
+            result.innerText = parseFloat(`${vM} ${uS}/${uT}`).toFixed(2) + ` ${uS}/${uT}`
 
     } else {
         

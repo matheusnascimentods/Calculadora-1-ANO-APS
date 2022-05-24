@@ -12,47 +12,47 @@ document.querySelector("#form").addEventListener('submit', function (event) {
         
         const operacoes = {
 
-            'km/s para km/h': function (value) { return value * 3600 },
-            'km/s para km/min': function (value) { return value * 60 },
+            'km/s para km/h': function (value) { return (value * 3600).toFixed(2) },
+            'km/s para km/min': function (value) { return (value * 60).toFixed(2) },
 
-            'km/h para km/s': function (value) { return value / 3600 },
-            'km/h para km/min': function (value) { return value / 60 },
+            'km/h para km/s': function (value) { return (value / 3600).toFixed(2) },
+            'km/h para km/min': function (value) { return (value / 60).toFixed(2) },
 
-            'km/min para km/h': function (value) { return value * 60 },
-            'km/min para km/s': function (value) { return value / 60 },
+            'km/min para km/h': function (value) { return (value * 60).toFixed(2) },
+            'km/min para km/s': function (value) { return (value / 60).toFixed(2) },
 
-            'km/s para m/s': function (value) { return value * 1000 },
-            'km/s para m/h': function (value) { return value * 1000 * 3600 },
-            'km/s para m/min': function (value) { return value * 1000 * 60 },
+            'km/s para m/s': function (value) { return (value * 1000).toFixed(2) },
+            'km/s para m/h': function (value) { return (value * 1000 * 3600).toFixed(2) },
+            'km/s para m/min': function (value) { return (value * 1000 * 60).toFixed(2) },
 
-            'km/h para m/s': function (value) { return value * 1000 / 3600 },
-            'km/h para m/h': function (value) { return value * 1000 },
-            'km/h para m/min': function (value) { return value * 1000 / 60 },
+            'km/h para m/s': function (value) { return (value * 1000 / 3600).toFixed(2) },
+            'km/h para m/h': function (value) { return (value * 1000).toFixed(2) },
+            'km/h para m/min': function (value) { return (value * 1000 / 60).toFixed(2) },
 
-            'km/min para m/s': function (value) { return value * 1000 / 60 },
-            'km/min para m/h': function (value) { return value * 1000 * 60 },
-            'km/min para m/min': function (value) { return value * 1000 },
+            'km/min para m/s': function (value) { return (value * 1000 / 60).toFixed(2) },
+            'km/min para m/h': function (value) { return (value * 1000 * 60).toFixed(2) },
+            'km/min para m/min': function (value) { return (value * 1000).toFixed(2) },
 
-            'm/s para m/h': function (value) { return value * 3600 },
-            'm/s para m/min': function (value) { return value * 60 },
+            'm/s para m/h': function (value) { return (value * 3600).toFixed(2) },
+            'm/s para m/min': function (value) { return (value * 60).toFixed(2) },
 
-            'm/h para m/s': function (value) { return value / 3600 },
-            'm/h para m/min': function (value) { return value / 60 },
+            'm/h para m/s': function (value) { return (value / 3600).toFixed(2) },
+            'm/h para m/min': function (value) { return (value / 60).toFixed(2) },
 
-            'm/min para m/s': function (value) { return value / 60 },
-            'm/min para m/h': function (value) { return value * 60 },
+            'm/min para m/s': function (value) { return (value / 60).toFixed(2) },
+            'm/min para m/h': function (value) { return (value * 60).toFixed(2) },
 
-            'm/s para km/s': function (value) { return value / 1000 },
-            'm/s para km/h': function (value) { return value / 1000 * 3600 },
-            'm/s para km/min': function (value) { return value * 60 / 1000  },
+            'm/s para km/s': function (value) { return (value / 1000).toFixed(2) },
+            'm/s para km/h': function (value) { return (value / 1000 * 3600).toFixed(2) },
+            'm/s para km/min': function (value) { return (value * 60 / 1000).toFixed(2)  },
 
-            'm/h para km/s': function (value) { return value / 1000 / 3600 },
-            'm/h para km/h': function (value) { return value / 1000 },
-            'm/h para km/min': function (value) { return value / 1000 / 60 },
+            'm/h para km/s': function (value) { return (value / 1000 / 3600).toFixed(2) },
+            'm/h para km/h': function (value) { return (value / 1000).toFixed(2) },
+            'm/h para km/min': function (value) { return (value / 1000 / 60).toFixed(2) },
 
-            'm/min para km/s': function (value) { return value / 1000 / 60 },
-            'm/min para km/h': function (value) { return value / 1000 * 60 },
-            'm/min para km/min': function (value) { return value / 1000 },
+            'm/min para km/s': function (value) { return (value / 1000 / 60).toFixed(2) },
+            'm/min para km/h': function (value) { return (value / 1000 * 60).toFixed(2) },
+            'm/min para km/min': function (value) { return (value / 1000).toFixed(2) },
         }
 
         let value = document.querySelector("#value-to-be-converted").value
