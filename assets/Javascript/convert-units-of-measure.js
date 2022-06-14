@@ -12,12 +12,12 @@ document.querySelector("#form").addEventListener('submit', function (event) {
         
         const operacoes = {
 
-            'cm para m': function (value) { return (value / 100).toFixed(2) },
-            'cm para km': function (value) { return (value / 100000).toFixed(2) },
-            'm para cm': function (value) { return  (value * 100).toFixed(2) },
-            'm para km': function (value) { return (value / 1000).toFixed(2) },
-            'km para m': function (value) { return (value * 1000).toFixed(2) },
-            'km para cm': function (value) { return (value * 100000).toFixed(2) }
+            'cm para m': function (value) { return (value / 100) },
+            'cm para km': function (value) { return (value / 100000) },
+            'm para cm': function (value) { return  (value * 100) },
+            'm para km': function (value) { return (value / 1000) },
+            'km para m': function (value) { return (value * 1000) },
+            'km para cm': function (value) { return (value * 100000) }
 
         }
 

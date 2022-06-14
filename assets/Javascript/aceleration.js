@@ -11,5 +11,5 @@ const form = document.querySelector("#form").addEventListener("submit", (event)=
 
     result.parentElement.classList.remove("invisible")
     result.parentElement.classList.add("visible")
-    result.innerText = parseFloat(`${a}`).toFixed(2) + " m/s²"
+    result.innerText = a + " m/s²"
 })
