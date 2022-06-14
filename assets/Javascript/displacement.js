@@ -15,7 +15,7 @@ document.querySelector("#form").addEventListener("submit", (event)=>{
         const result = document.querySelector("#result")
             result.parentElement.classList.remove("invisible")
             result.parentElement.classList.add("visible")
-            result.innerText = parseFloat(`${d} ${uS}`).toFixed(2) + ` ${uS}`
+            result.innerText = parseFloat(`${d} ${uS}`)+ ` ${uS}`
 
     } else {
 
